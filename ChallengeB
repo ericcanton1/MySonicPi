@@ -1,0 +1,71 @@
+# Welcome to Sonic Pi
+live_loop :aa do
+  12.times do
+    sample :drum_snare_soft
+    sleep 2
+  end
+  stop
+end
+
+live_loop :aaa do
+  12.times do
+    sample :drum_heavy_kick, amp: 2
+    sleep 1
+  end
+  stop
+end
+
+live_loop :aaaa do
+  12.times do
+    sample :drum_cymbal_closed
+    sleep 0.5
+  end
+  stop
+end
+
+sleep 24
+sample :drum_splash_hard
+sample :drum_cymbal_hard
+sleep 1
+sample :drum_cymbal_hard
+sleep 1
+sample :drum_cymbal_hard
+sleep 1
+sample :drum_cymbal_hard
+sleep 1
+sample :drum_splash_hard
+sample :drum_cymbal_hard
+sleep 1
+sample :drum_cymbal_hard
+sample :drum_cowbell
+sleep 1
+sample :drum_cymbal_hard
+sleep 1
+sample :drum_cymbal_hard
+sample :drum_cowbell
+sample :drum_splash_hard
+
+
+live_loop :aa do
+  3.times do
+    sample :drum_snare_soft
+    sleep 2
+  end
+  stop
+end
+
+live_loop :aaa do
+  6.times do
+    sample :drum_heavy_kick, amp: 2
+    sleep 1
+  end
+  stop
+end
+
+live_loop :aaaa do
+  12.times do
+    sample :drum_cymbal_closed
+    sleep 0.5
+  end
+  stop
+end
